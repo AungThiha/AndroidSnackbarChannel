@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="hello_from_AndroidSnackbarChannel">Hello from AndroidSnackbarChannel</string>
+    <string name="ok">Ok</string>
+</resources>
