@@ -7,6 +7,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 
+/**
+ * This pattern with [rememberSnackbarHostController] and [SnackbarHostController] is inspired by
+ * the official `NavController` implementation and a video from the Android Developers channel:
+ * https://www.youtube.com/watch?v=rmv2ug-wW4U
+ *
+ * It provides a familiar and lifecycle-safe way for developers to work with snackbars.
+ */
 @Composable
 fun rememberSnackbarHostController(
     snackbarHostState: SnackbarHostState = remember { SnackbarHostState() }
