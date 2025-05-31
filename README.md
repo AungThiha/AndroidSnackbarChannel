@@ -32,6 +32,7 @@ It’s a focused solution that keeps your snackbar logic clean, lifecycle-aware,
 - Lifecycle-aware: events are only collected when the UI is active
 - No brittle base classes - favors composition over inheritance using Kotlin delegation
 - Converts string resources automatically (e.g. R.string.key → "Actual String")
+- Supports all original showSnackbar parameters (action labels, duration, callbacks, etc.)
 - Fully unit-testable
 
 ---
