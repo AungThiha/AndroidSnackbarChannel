@@ -122,15 +122,15 @@ showSnackBar(
     actionLabel = "Retry"
 )
 
-// Mixing types with SnackbarString
+// Mixing string types
 showSnackBar(
-    message = SnackbarString("မင်္ဂလာပါ"),
-    actionLabel = SnackbarString(R.string.ok)
+    message = "မင်္ဂလာပါ",
+    actionLabel = R.string.ok
 )
 
 showSnackBar(
-    message = SnackbarString(R.string.hello_world),
-    actionLabel = SnackbarString("ok")
+    message = R.string.hello_world,
+    actionLabel = "ok"
 )
 ```
 All parameters are optional except the message.   

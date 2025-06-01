@@ -33,8 +33,8 @@ class MainViewModel(
 
     fun snackbarWithMixedStringTypes() {
         showSnackBar(
-            message = SnackbarString("မင်္ဂလာပါ"),
-            actionLabel = SnackbarString(R.string.ok),
+            message = "မင်္ဂလာပါ",
+            actionLabel = R.string.ok,
         )
     }
 

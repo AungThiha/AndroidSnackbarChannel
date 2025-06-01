@@ -38,6 +38,24 @@ class SnackbarChannel(
     )
 
     override fun showSnackBar(
+        message: Int,
+        actionLabel: String,
+        withDismissAction: Boolean,
+        duration: SnackbarDuration,
+        onActionPerform: () -> Unit,
+        onDismiss: () -> Unit
+    ): ChannelResult<Unit> = snackbarMessages.trySend(
+        SnackbarModel(
+            message = SnackbarString.Resource(message),
+            actionLabel = SnackbarString.Literal(actionLabel),
+            withDismissAction = withDismissAction,
+            duration = duration,
+            onActionPerform = onActionPerform,
+            onDismiss = onDismiss,
+        )
+    )
+
+    override fun showSnackBar(
         message: String,
         actionLabel: String?,
         withDismissAction: Boolean,
@@ -55,6 +73,28 @@ class SnackbarChannel(
         )
     )
 
+    override fun showSnackBar(
+        message: String,
+        actionLabel: Int,
+        withDismissAction: Boolean,
+        duration: SnackbarDuration,
+        onActionPerform: () -> Unit,
+        onDismiss: () -> Unit
+    ): ChannelResult<Unit> = snackbarMessages.trySend(
+        SnackbarModel(
+            message = SnackbarString.Literal(message),
+            actionLabel = SnackbarString.Resource(actionLabel),
+            withDismissAction = withDismissAction,
+            duration = duration,
+            onActionPerform = onActionPerform,
+            onDismiss = onDismiss,
+        )
+    )
+
+    @Deprecated(
+        "Use showSnackBar with specific parameter types (String/@StringRes) instead of SnackbarString for simpler usage",
+        level = DeprecationLevel.WARNING
+    )
     override fun showSnackBar(
         message: SnackbarString,
         actionLabel: SnackbarString?,
