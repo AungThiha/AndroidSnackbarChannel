@@ -6,7 +6,6 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.channels.ChannelResult
 import kotlinx.coroutines.flow.receiveAsFlow
 
-
 class SnackbarChannel(
     private val snackbarMessages: Channel<SnackbarModel> = Channel(
         Channel.UNLIMITED,
