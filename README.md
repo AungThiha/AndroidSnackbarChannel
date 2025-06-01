@@ -40,7 +40,7 @@ It’s a focused solution that keeps your snackbar logic clean, lifecycle-aware,
 ## Installation
 
 ```kotlin
-commonMain.dependencies {
+dependencies {
     implementation("io.github.aungthiha-android-snackbar-channel-1.0.1")
 }
 ```
