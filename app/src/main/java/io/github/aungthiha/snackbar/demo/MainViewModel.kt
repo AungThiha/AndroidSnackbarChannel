@@ -4,7 +4,6 @@ import androidx.compose.material3.SnackbarDuration
 import androidx.lifecycle.ViewModel
 import io.github.aungthiha.snackbar.SnackbarChannel
 import io.github.aungthiha.snackbar.SnackbarChannelOwner
-import io.github.aungthiha.snackbar.SnackbarString
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
