@@ -46,7 +46,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.aungthiha",
         artifactId = "android-snackbar-channel",
-        version = "1.0.1"
+        version = "1.0.2"
     )
 
     pom {
