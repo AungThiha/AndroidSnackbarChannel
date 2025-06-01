@@ -83,7 +83,7 @@ import io.github.aungthiha.snackbar.rememberSnackbarHostController
 fun MyScreen(viewModel: MyViewModel = viewModel()) {
     
     val snackbarHostController = rememberSnackbarHostController()
-    viewModel.snackbarFlow.collectWithLifecycle {
+    viewModel.snackbarFlow.observeWithLifecycle {
         snackbarHostController.showSnackbar(it)
     }
 
